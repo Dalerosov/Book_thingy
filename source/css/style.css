@@ -1,0 +1,270 @@
+.logic_div {
+    position: absolute;
+    left: 20vw;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+body {
+    margin:0px;
+    font-family: Arial, sans-serif;
+}
+
+.bcg {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: -20vw;
+    width: 99.12vw;
+    z-index: -1;
+    background-color: lightsteelblue;
+}
+
+.global_nav_title {
+    position: absolute;
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border: 5px blueviolet solid;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+    border-top: none;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.detail_background {
+    position: absolute;
+    border: 4px solid black;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(200, 200, 255, 1);
+    width: 90vw;   
+    height: 90vh;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.preview_container {
+    position: relative;
+    border: 5px blue solid;
+    border-radius: 10px;
+    margin: 5px;
+    height: 140px;
+    width: 60vw;
+    background-color: aliceblue;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    
+}
+
+.credits {
+    position: relative;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.detail_content {
+    position: absolute;
+    top: 50px;
+    margin-top: 10px;
+    left: 500px;
+    width: 800px;
+}
+
+
+.detail_image {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    height: 600px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.control_buttons {
+    margin-left: 40px;
+}
+
+.login_menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 30px;
+    
+}
+
+.print_button {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3000;
+}
+
+@media print {
+    .no_print {
+        display: none !important;
+    }
+
+    .print_only {
+        display: block !important;
+    }
+
+    .detail_background {
+        border: none;
+        box-shadow: none;
+    }
+    .detail_content {
+        width:500px;
+    }
+}
+
+.printing_screen {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+}
+
+.form_container {
+    position: fixed;
+    width: 15.3vw;
+    margin: 80px auto;
+    margin-left: 5px;
+    padding: 35px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+}
+
+.form_container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.form_container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_container input[type="text"],
+.form_container input[type="date"],
+.form_container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+.form_container input:focus {
+    border-color: #4a7cff;
+    outline: none;
+}
+
+.form_container input[type="file"] {
+    margin-top: 5px;
+}
+
+.form_container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #4a7cff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form_container button:hover {
+    background: #355edb;
+}
+
+
+
+.hide_login_item {
+    display: none !important;
+}
+
+.login_menu_item {
+    width: 120px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+.preview_image {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 100px;
+    width: 66px;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+
+.book_title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.author {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.preview_class {
+    position: relative;
+    margin-left: 200px;
+}
+
+.preview_title {
+    margin-top: -100px;
+}
+
+.detail_button {
+    position: absolute;
+
+    bottom: 20px;
+    right: 40px;
+}
+
+.rating {
+    font-size: 20;
+}
